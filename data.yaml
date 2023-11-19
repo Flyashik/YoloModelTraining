@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 11
+names: ['Accent Chairs', 'Beds', 'Bookshelves', 'Coffee Tables', 'Desk Chairs', 'Desks', 'Dining Chairs', 'Dining Tables', 'Nightstands', 'Side Tables', 'Sofas']
+
+roboflow:
+  workspace: pear-y6ths
+  project: furniture-item-detector
+  version: 5
+  license: MIT
+  url: https://universe.roboflow.com/pear-y6ths/furniture-item-detector/dataset/5
