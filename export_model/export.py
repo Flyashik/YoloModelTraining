@@ -156,11 +156,15 @@ def export_onnx(model, im, file, opset, dynamic, simplify, prefix=colorstr('ONNX
 
     import os 
   
+    parent_dir = "../runs/"
+    try:  
+        os.mkdir(parent_dir)  
+    except OSError as error:  
+        print(error)   
+
     # Directory 
     directory = "exported/"
-    
     # Parent Directory path 
-    parent_dir = "../export_model/"
     
     # Path 
     path = os.path.join(parent_dir, directory) 
